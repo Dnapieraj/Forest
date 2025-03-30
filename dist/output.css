@@ -8,6 +8,8 @@
       "Courier New", monospace;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
@@ -240,6 +242,10 @@
   .text-center {
     text-align: center;
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -413,9 +419,53 @@ body {
   padding: 0.3em 2em;
   background-color: #f8f2f2;
   margin-top: 3em;
-  position: absolute;
   left: 50%;
   transform: translate(-50%);
+}
+.footer {
+  background-color: #c0bebe;
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__box-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__box-logo i {
+  font-size: 3rem;
+}
+.footer__box-logo--p {
+  font-size: 3rem;
+}
+.footer__box-logo p {
+  margin-left: 0.3em;
+}
+.footer__box-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__box-menu--item {
+  margin-top: 1.4em;
+  margin-bottom: 2em;
+}
+.footer__box-menu--item-p {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+.footer__box-menu--item-li {
+  margin-top: 0.5em;
+  margin-bottom: 0.1em;
+}
+.footer__bottom {
+  background-color: #c0bebe;
+  border-top: 2px solid #000;
+  padding: 1em;
 }
 @media (min-width: 640px) {
   .header__box {
@@ -438,6 +488,28 @@ body {
     text-align: center;
     font-size: 3.2rem;
     text-align: center;
+  }
+  .footer__box-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer__box-menu {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+  }
+  .footer__box {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer__box-logo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: 960px) {
