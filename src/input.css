@@ -172,6 +172,7 @@ body {
 }
 
 .offers__box-btn {
+	text-align: center;
 	border-radius: 8px;
 	cursor: pointer;
 	margin-top: 1em;
@@ -180,7 +181,7 @@ body {
 	-webkit-box-shadow: 14px 12px 12px -11px rgba(64, 64, 66, 1);
 	-moz-box-shadow: 14px 12px 12px -11px rgba(64, 64, 66, 1);
 	box-shadow: 14px 12px 12px -11px rgba(64, 64, 66, 1);
-	transition: background-color, color 0.3;
+	transition: background-color 0.3s, color 0.3s;
 }
 
 .offers__box-btn:hover {
@@ -188,21 +189,46 @@ body {
 	color: #fff;
 }
 
+.offerts__box-btn2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.offerts__boxes-more {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.offerts__boxes-more--a {
+	text-align: center;
+	margin: 0 auto;
+}
+
 .offerts__box-more--a {
+	display: block;
+	margin: 0 auto;
+	text-decoration: none;
 	text-align: center;
 	border-radius: 8px;
 	cursor: pointer;
-	margin-top: 1em;
-	padding: 0.3em 2em;
+	padding: 0.5em 2em;
 	background-color: #f8f2f2;
-	/* -webkit-box-shadow: 14px 12px 12px -11px rgba(64, 64, 66, 1);
-	-moz-box-shadow: 14px 12px 12px -11px rgba(64, 64, 66, 1);
+	color: #000;
 	box-shadow: 14px 12px 12px -11px rgba(64, 64, 66, 1);
-	transition: background-color, color 0.3; */
-	margin-top: 3em;
-	/* position: absolute; */
-	left: 50%;
-	transform: translate(-50%);
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.offerts__box-title {
+	font-weight: bold;
+}
+.offerts__box-more--a:hover {
+	background-color: green;
+	color: #fff;
 }
 
 .footer {
@@ -211,6 +237,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 }
 
 .footer__box-logo {
@@ -258,6 +285,24 @@ body {
 	padding: 1em;
 }
 
+/* oferty*/
+
+.xd {
+	padding: 10em;
+}
+
+@media (min-width: 494px) {
+	.offerts__boxes {
+		gap: 1em;
+	}
+}
+
+@media (min-width: 700px) {
+	.offerts__boxes {
+		gap: 5em;
+	}
+}
+
 @media (min-width: 640px) {
 	.header__box {
 		/* margin-left: 2em; */
@@ -267,6 +312,13 @@ body {
 	.header__box h1 {
 		/* margin-right: 11.8em; */
 		text-align: left;
+	}
+
+	.footer__box-menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
 	}
 }
 
